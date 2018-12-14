@@ -6,7 +6,7 @@
 3. Exploratory Analysis <br>
 4. Machine Learning
 
--- 
+
 ### 1. Acquire the data
 Marketing Customer Value Analysis <br>
 https://www.ibm.com/communities/analytics/watson-analytics-blog/marketing-customer-value-analysis/ <br>
@@ -36,11 +36,11 @@ Total Claim Amount: Total amount claimed per customer <br>
 Vehicle Class: Vehicle class <br>
 Vehicle Size: Vehicle size <br>
 
--- 
+
 ### 2. State the question
 Can we predict the amount claimed by a client? <br>
 
---
+
 ### 3. Exploratory Analysis
 
 24 columns:  <br>
@@ -85,7 +85,7 @@ Moderate: 1 with values between IQR 1(272.2582445) and Mean(434.0887943128969) <
 High: 2 with values between Mean(434.0887943128969) and IQR2 (547.5148387500001) <br>
 Very High: 3 with values between IQR2(547.5148387500001) and Max (2893.239678) <br>
 
---
+
 ### 4. Machine Learning
 y (target) = Total Claim Labels <br>
 <?php
@@ -125,3 +125,8 @@ Eliminamos Features que puede que no sepamos a la hora de analizar a un cliente:
 <br>
 - Eliminamos Customer Lifetime Value, características de clientes que puede que discrimine mis datos. <br>
 <br>
+Tras estas operaciones mi modelo Random Forest sigue presentando un Accuracy 0.9978106185002736. <br>
+<br>
+- Probamos comprobar todas las features de cada variable, no vemos ninguna variable que se repita en una columna. <br>
+<br>
+- Eliminamos columnas: 
