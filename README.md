@@ -42,7 +42,12 @@ Extended 30% <br>
 Premium 9% <br>
 
 **Education**
-
+'Education' is a categorical variable, with 5 categories (type of education): <br>
+Bachelor                30% <br>
+College                 29.3%  <br>
+High School or Below    28.7% <br>
+Master                   8% <br>
+Doctor                   3% <br>
 
 
 
@@ -51,3 +56,6 @@ Premium 9% <br>
 
 **Customer Life Time Value** <br>
 
+
+
+- apply.lambda
