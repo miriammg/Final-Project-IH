@@ -4,7 +4,8 @@
 1. Acquire the data <br>
 2. State the question <br>
 3. Exploratory Analysis <br>
-4. Machine Learning
+4. Train models
+5. Validate model
 
 
 ### 1. Acquire the data
@@ -86,13 +87,13 @@ High: 2 with values between Mean(434.0887943128969) and IQR2 (547.5148387500001)
 Very High: 3 with values between IQR2(547.5148387500001) and Max (2893.239678) <br>
 
 
-### 4. Machine Learning
+### 4. Train models
 y (target) = Total Claim Labels <br>
-<?php
+<php
 Convert feature Total Claim Amount in class = Total Claim Labels <br>
-?>
+>
 x (data) = rest of our data <br>
-
+<br>
 ##### Target = Total Claim Label with 3 class <br>
 In our target 'Total Claim Amount' convert to 3 labels, most of the data was grouped in class 1, the models' score were very high but the confussion matrix show us that the class 1 not were well classifier. <br>
 With this data we tried: <br>
@@ -102,6 +103,7 @@ With this data we tried: <br>
 - Principal Components (n=6): 0.578544061302682 <br>
 - Principal Components (n=2): 0.2857142857142857 <br>
 - Cross Validation Score: [1., 0.99562124,  0.99452655,  0.99452655, 0.99780822] <br>
+- 
 
 ##### Target = Total Claim Label with 4 class <br>
 
