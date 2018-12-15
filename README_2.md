@@ -89,7 +89,7 @@ Very High: 3 with values between IQR2(547.5148387500001) and Max (2893.239678) <
 
 ### 4. Train models
 y (target) = Total Claim Labels <br>
-<php
+
 Convert feature Total Claim Amount in class = Total Claim Labels <br>
 >
 x (data) = rest of our data <br>
