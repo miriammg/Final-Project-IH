@@ -11,7 +11,7 @@
 ### 1. Acquire the data
 Marketing Customer Value Analysis <br>
 https://www.ibm.com/communities/analytics/watson-analytics-blog/marketing-customer-value-analysis/ <br>
-<br>
+<br> 
 Customer: unique value per customer <br>
 State: Customer's region <br>
 Customer Lifetime Value: the difference between the total amount of revenues from a customer and the companies' expenses for this customer. <br>
@@ -36,8 +36,7 @@ Sales Channel: Sales Channel
 Total Claim Amount: Total amount claimed per customer <br>
 Vehicle Class: Vehicle class <br>
 Vehicle Size: Vehicle size <br>
-
-
+>
 ### 2. State the question
 Can we predict the amount claimed by a client? <br>
 
@@ -73,7 +72,7 @@ Total Claim Amount: min it's 0.09 and max it's 2893. <br>
 The variables do not show much correlation, only 'Monthly Premium Auto' with 'Total Claim Amount' (0.63) and 'Customer Lifetime Value' (0.4). <br>
 
 I try drop 'Monthly Premium Auto' and fit all models with machine learning and the results not show diferences. Conclusion: I keep the column. <br>
-
+>
 - **Distribution** <br>
 Plot a histogram for income and the distribution. In Customer Lifetime Value, Monthly Premium Auto and Total Claim Amount there are a lots of values in a low level. We have otliers and later try our model without this variables. <br>
 
@@ -116,9 +115,26 @@ Accuracy: Accuracy SVM: 0.3880678708264915 <br>
 - **Random Forest Classifier**
 Grid Search: parameters = 'n_estimator':50 <br>
 Accuracy SVM: 0.9978106185002736 <br>
+<br>
+Conclusion: Random Forest Classifier with 50 stimators and class weight it's the best model. <br>
+
+### 5. Evaluate model
+![Alt text](/home/miriam/Escritorio/Final-Project-Ironhack/Random-Forest-Confusion_matrix.png?raw=true "Confusion Matrix")
+<br>
 Cross-validated scores: [0.99606299 0.99868766 0.9993434  0.9986868  0.99868421 0.99934211] <br>
+<br>
+Classification Report <br>
 
+              precision    recall  f1-score   support
 
+           0       0.88      0.94      0.91       452
+           1       0.75      0.84      0.80       593
+           2       0.69      0.59      0.63       316
+           3       0.90      0.78      0.83       466
+
+   micro avg       0.81      0.81      0.81      1827
+   macro avg       0.80      0.79      0.79      1827
+weighted avg       0.81      0.81      0.81      1827
 
 ### 5. Resolving problems
 Nuestro modelo nos da un accuaricy en Random Forest muy alto. Vamos a intentar resolver este problema en varios métodos. <br>
