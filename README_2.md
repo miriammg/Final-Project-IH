@@ -79,7 +79,7 @@ Plot a histogram for income and the distribution. In Customer Lifetime Value, Mo
 - **Total Claim Amount** <br>
 Let categorize our variable 'Total Claim Amount' with lables Low, Moderate, High and Very High. <br>
 
-We tried cut only 3 levels(0-IQR1-IQR2-Max), but the mostly of my dates if concentrate in one label. We decided cut in 4 levels (0-IQR1-Mean-IQR2-Max). <br>
+We tried cut only 3 levels(0-IQR1-IQR2-Max), but the most of data was concentrated in one label. We decided cut in 4 levels (0-IQR1-Mean-IQR2-Max). <br>
 Low: 0 with values between 0 and IQR 1(272.2582445)<br>
 Moderate: 1 with values between IQR 1(272.2582445) and Mean(434.0887943128969) <br>
 High: 2 with values between Mean(434.0887943128969) and IQR2 (547.5148387500001) <br>
@@ -102,7 +102,7 @@ With this data we tried: <br>
 - Principal Components (n=6): 0.578544061302682 <br>
 - Principal Components (n=2): 0.2857142857142857 <br>
 - Cross Validation Score: [1., 0.99562124,  0.99452655,  0.99452655, 0.99780822] <br>
-- 
+
 
 ##### Target = Total Claim Label with 4 class <br>
 
@@ -119,7 +119,7 @@ Accuracy SVM: 0.9978106185002736 <br>
 Conclusion: Random Forest Classifier with 50 stimators and class weight it's the best model. <br>
 
 ### 5. Evaluate model
-![Alt text](/home/miriam/Escritorio/Final-Project-Ironhack/Random-Forest-Confusion_matrix.png?raw=true "Confusion Matrix")
+(/home/miriam/Escritorio/Final-Project-Ironhack/Random-Forest-Confusion_matrix.png?raw=true "Confusion Matrix")
 <br>
 Cross-validated scores: [0.99606299 0.99868766 0.9993434  0.9986868  0.99868421 0.99934211] <br>
 <br>
